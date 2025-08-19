@@ -14,7 +14,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 @Composable
 fun HuffmanScreen(vm: HuffmanViewModel = viewModel()) {
     val st = vm.state
-    Scaffold(topBar = { TopAppBar(title = { Text("Huffman Coding (Lite)") }) }) { pad ->
+    Scaffold(topBar = { TopAppBar(title = { Text("Huffman") }) }) { pad ->
         Column(
             Modifier.padding(pad).padding(16.dp).fillMaxSize().verticalScroll(rememberScrollState()),
             verticalArrangement = Arrangement.spacedBy(12.dp)
